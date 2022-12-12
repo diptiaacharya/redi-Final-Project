@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow: hidden;
+}
+#menu{
+    background: rosybrown;
+}
+.title{
+    padding: 0 30px;
+}
+#menu img{
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.title-name p{
+    display: block;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-left:10px;
+}
+
+.title p{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    margin: 0;
+}
+.border{
+    width: 270px;
+    height: 4px;
+    margin: 3px 0;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background: brown;
+}
+
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px 0;
+    color: black;
+    font-weight: 300;
+    
+}
+.menu-item a:hover{
+    background: rgb(250, 212, 218);
+}
+#food-items{
+    background: rosybrown;
+    overflow: auto;
+    height: calc(100vh - 86px);
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: rosybrown;
+    z-index: 1;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#header .address{
+    font-size: 20px;
+    
+}
+
+.your-address{
+    border: 1px solid indianred;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.add-box i{
+    font-size: 20px;
+}
+
+#header select{
+    width: 150px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    padding: 0 5px;
+}
+.food-items{
+    display: none;
+}
+
+.user{
+background: rosybrown;
+}
+.util i,.user i{
+    font-size: 18px;
+    margin: 0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.util i:active{
+    color: white;
+    background: crimson;
+}
+#biryani,#paneer,#chicken,#vegetable,#chinese,#south-indian{
+    margin-top: 40px;   
+}
+#paneer #item-card,#vegetable #item-card{
+    background: black;
+}
+#chinese #item-card{
+    background: black;
+}
+#category-name,.item-menu{
+    margin: 10px;
+    font-size: 25px;
+    color: brown;
+    font-family: 'Aclonica', sans-serif;
+}
+#item-card{
+    width: 180px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: blue;
+    cursor: pointer;
+    transition: 0.5s all step-end;
+}
+#item-card:hover img{
+    transform: scale(1.2);
+}
+#card-top{
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+#rating{
+    padding: 7px;
+    color: goldenrod;
+    background: black;
+    font-size: 14px;
+    border-radius: 15px;
+}
+.fa-heart-o{
+    padding: 6px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.toggle-heart{
+background: orangered;
+color: white; 
+}
+#item-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 18px;
+}
+#item-price{
+    margin: 0;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.food-items{
+    display: none;
+}
+.cart-toggle{
+    display: none;
+}
+
+
+
+
+#checkout{
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    background: white;
+    padding: 10px 20px;
+}
+#checkout p{
+    margin: 15px 0;
+    float: left;
+}
+
+#cart{
+    background: rosybrown;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+#category-list{
+ background: rosybrown;
+}
+.item-menu{
+    margin: 0;
+    font-size: 20px;
+    margin-top: 40px;
+    color: black;
+    background: rosybrown ;
+    
+}
+.list-card{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.list-card:hover{
+    background: rgb(255, 216, 222);
+}
+.list-card:hover img{
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
+}
+.list-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.list-name{
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+.taste-header{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: rosybrown;
+}
+
+
